@@ -1,0 +1,10 @@
+<h1 class="mt-4 text-3xl font-semibold">{{ title }}</h1>
+
+<p class="mt-4 text-lg">{{ parentMessage }}</p>
+
+<app-post-list [messagePost]="messagePost"></app-post-list>
+
+<!-- trigger emit  -->
+<button (click)="sendMessage()" class="w-14 border-2 bg-slate-300">
+  Click
+</button>
